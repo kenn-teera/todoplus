@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TodoPlus!</title>
+</head>
+
+<body>
+    <h1>Welcome to TodoPlus!</h1>
+    <p>Your ultimate task management solution.</p>
+    <p>Date:</p>
+    <button id="calendar-button">Show Calendar</button>
+    <div id="calendar" style="display:none;">
+        <h2>Calendar</h2>
+        <p>Here you can view your tasks by date.</p>
+        <button id="close-calendar">Close Calendar</button>
+    </div>
+    <form id="todo-form">
+        <input type="text" id="task-input" placeholder="Add a new task" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <div id="show-tasks">
+        <p>Your Tasks</p>
+        <section ="task-priority">
+            <option value="high">High Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="low">Low Priority</option>
+        </section>
+        <ul id="task-list"></ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 TodoPlus. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
