@@ -25,6 +25,8 @@ func addTask(taskName string) {
 
 func listTasks() {
 	fmt.Println("----------------------")
+	fmt.Println("TodoPlus List")
+	fmt.Println("----------------------")
 	for i, task := range tasks {
 		var status = "[N]"
 		if task.completed {
@@ -84,7 +86,6 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
-		fmt.Println("TodoPlus List")
 		listTasks()
 		fmt.Print("Enter your action (0-6): ")
 		var choice int
